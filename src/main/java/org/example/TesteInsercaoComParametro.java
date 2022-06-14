@@ -5,16 +5,20 @@ import java.sql.*;
 public class TesteInsercaoComParametro {
 
     public static void main(String[] args) throws SQLException {
-        String nome = "Mouse 2";
-        String descricao = "Mouse sem fio 2";
+
         ConnectionFactory factory = new ConnectionFactory();
 
         Connection connection = factory.recuperarConexao();
 
        // String sql = ;
         PreparedStatement stm =  connection.prepareStatement("INSERT INTO PRODUTO (nome, descricao) VALUES (?,?)",Statement.RETURN_GENERATED_KEYS);
-        stm.setString(1,nome);
-        stm.setString(2,descricao);
+        adicionarVariavel("SmartTV", "45 Polegadas", stm);
+        adicionarVariavel("Radio", "Radio de bateria", stm);
+    }
+
+    private static void adicionarVariavel(String nome, String descricao, PreparedStatement stm) throws SQLException {
+        stm.setString(1, nome);
+        stm.setString(2, descricao);
         //RETORNA  A CHAVE GERADA
         stm.execute();
 

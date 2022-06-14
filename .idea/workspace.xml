@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c8c15cc-eb29-4b3f-9a07-a48d078b9c79" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestaListagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestaListagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestaRemocao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestaRemocao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TesteInsercaoComParametro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteInsercaoComParametro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,8 +110,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestaListagem" />
-        <item itemvalue="Application.TestaRemocao" />
         <item itemvalue="Application.TesteInsercaoComParametro" />
+        <item itemvalue="Application.TestaRemocao" />
         <item itemvalue="Application.TestaInsercao" />
       </list>
     </recent_temporary>
