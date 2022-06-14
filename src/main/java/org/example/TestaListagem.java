@@ -10,9 +10,9 @@ public class TestaListagem {
             ConnectionFactory criaConexao = new ConnectionFactory();
             Connection con = criaConexao.recuperarConexao();
             //instancia qual vai ser o comando sql
-             Statement stm = con.createStatement();
+             PreparedStatement stm = con.prepareStatement("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
                 //fala pra executar o seguinte comando/querry
-                stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
+                stm.execute();
 
                 //recebe os resultados dessa querry
                ResultSet rst =  stm.getResultSet();

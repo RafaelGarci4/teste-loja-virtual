@@ -1,9 +1,6 @@
 package org.example;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class TesteInsercaoComParametro {
 
@@ -14,10 +11,12 @@ public class TesteInsercaoComParametro {
 
         Connection connection = factory.recuperarConexao();
 
-
-        Statement stm =  connection.createStatement();
+       // String sql = ;
+        PreparedStatement stm =  connection.prepareStatement("INSERT INTO PRODUTO (nome, descricao) VALUES (?,?)",Statement.RETURN_GENERATED_KEYS);
+        stm.setString(1,nome);
+        stm.setString(2,descricao);
         //RETORNA  A CHAVE GERADA
-        stm.execute("INSERT INTO PRODUTO (nome, descricao) VALUES ('"+ nome +"','"+descricao+"')",Statement.RETURN_GENERATED_KEYS);
+        stm.execute();
 
         ResultSet rst = stm.getGeneratedKeys();
         while (rst.next()){
