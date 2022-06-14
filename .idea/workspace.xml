@@ -41,7 +41,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaListagem">
+  <component name="RunManager" selected="Application.TesteInsercaoComParametro">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="teste-loja-virtual" />
@@ -109,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestaListagem" />
         <item itemvalue="Application.TesteInsercaoComParametro" />
+        <item itemvalue="Application.TestaListagem" />
         <item itemvalue="Application.TestaRemocao" />
         <item itemvalue="Application.TestaInsercao" />
       </list>
